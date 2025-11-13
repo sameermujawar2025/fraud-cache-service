@@ -1,7 +1,11 @@
 # fraud-ml-training-pipeline
 Type: Batch / Scheduler
 Role: Process client CSV → train → export models
-Train models from client CSV (offline), Python (Scheduler + boto3 + XGBoost)
+Reads your client CSV (with all those columns)
+Performs feature engineering
+Trains three models (fraud_xgb.json, fraud_autoencoder.pt, iforest.pkl)
+Saves artifacts under /models/<version>
+Uploads them to S3/MinIO
 
 Responsibilities:
 Function	Description
