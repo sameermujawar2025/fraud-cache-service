@@ -1,0 +1,7 @@
+pymongo
+pandas
+python-dateutil==2.9.0.post0
+pydantic
+python-dotenv
+apscheduler
+schedule
